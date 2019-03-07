@@ -249,26 +249,18 @@ div.service-page {
 
 
 /*Contact Page*/
-input {
-	border-radius: 5px;
-}
-textarea {
-	border-radius: 5px;
-}
 
 .contact-us {
 	margin: 30px 0;
 	display: flex;
-	justify-content: space-around;
-	border-bottom: 2px solid gray;
+	justify-content: space-between;
 	padding-bottom: 40px;
-	height: 300px;
+	min-height: 100%;
 }
 
 .contact-us-img {
-	width: 50%;
+	width: 20%;
 	display: block;
-	margin: 0 auto;
 }
 
 .contact-form {
@@ -307,10 +299,24 @@ textarea {
 	height: 60px;
 }
 
+.footer-wrapper {
+	position: absolute;
+	bottom: 0px;
+}
+
+.contact-us-footer {
+	border-top: 2px solid gray;
+	position: absolute;
+	bottom: 0;
+	width: 900px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 @media(max-width: 500px) {
 	div.service-page {
 		width: 100%;
-		text-align: center;
+		text-align: left;
 	}
 	
 	header {
@@ -323,6 +329,7 @@ textarea {
 		align-items: center;
 		order: 2;
 		margin-top: 20px;
+		text-align: center;
 	}
 	
 	header nav a {
@@ -338,9 +345,14 @@ textarea {
 		margin-top: 0px;
 	}
 
+	.services-description {
+		padding: 20px;
+	}
+
 	.services-container {
 		flex-flow: column nowrap;
 		align-items: center;
+		width: 100%;
 	}
 
 	.services-container div {
@@ -354,11 +366,15 @@ textarea {
 
 	.about-services {
 		flex-direction: column;
-		align-items: center;
+		padding: 20px;
+	}
+
+	.about-services-image img {
+		width: 100%;
 	}
 	
 	.about-services div {
-		width: 410px;
+		width: 100%;
 	}
 	
 	.about-services-text ul {
